@@ -2,8 +2,12 @@
 /*
 */ 
 ({
-    paths: {},
-    exclude: [],
+    paths: {
+	"underscore": "lib/underscore.min"
+    },
+    exclude: [
+	"underscore"
+    ],
     name: "Assertion",
     out: "assertion.min.js"
 })
