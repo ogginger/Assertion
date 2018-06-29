@@ -7,10 +7,17 @@ define([
 ) {
 	return {
 		"Name":"Assertion_PassingCustomComparison",
-		"Input": function( Input ) {
-			return true;
+		"Input": {
+			"Result": true,
+			"ExpectedOutput": false,
+			"ComparisonFunction": function( Input ) {
+				return Input.Result !== Input.ExpectedOutput;
+			}
 		},
 		"Function": Assertion,
-		"ExpectedOutput": true
+		"ExpectedOutput": true,
+		"Comparator": {
+			"Debug": false
+		}
 	};
 });

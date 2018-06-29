@@ -1,7 +1,15 @@
 //Assertion.js: Functional Logic.
 
-define([], function() {
+define([
+	"underscore"
+], function(
+	_
+) {
   return function( Input ) {
-	return Input.Comparator === Input.Comparand;
+	if ( _.has( Input, "ComparisonFunction" ) ) {
+		return Input.ComparisonFunction( Input );
+	} else {
+		return Input.Result === Input.ExpectedOutput;
+	}
   };
 });
