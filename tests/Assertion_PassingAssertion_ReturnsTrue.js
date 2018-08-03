@@ -8,8 +8,8 @@ define([
 	return {
 		"Name":"Assertion_PassingAssertion_ReturnsTrue",
 		"Input": {
-			"Comparator": undefined,
-			"Comparand": undefined
+			"Comparator": true,
+			"Comparand": true
 		},
 		"Function": Assertion,
 		"ExpectedOutput": true

@@ -1,14 +1,26 @@
 //Assertion.js: Functional Logic.
 
 define([
-	"underscore"
+	"underscore",
+	"bIsObjectEqual"
 ], function(
-	_
+	_,
+	bIsObjectEqual
 ) {
   return function( Input ) {
+	//Check if the comparator passes the comparison clause.
 	if ( _.has( Input, "ComparisonFunction" ) ) {
+		//Atypically the comparison clause will be given.
 		return Input.ComparisonFunction( Input );
+	} else if ( 
+		_.has( Input, "Comparator" ) &&
+		_.has( Input.Comparator, "Object" ) &&
+		Input.Comparator.Object === true
+	) {
+		//Objects need a special function to compare for equivalence.
+		return bIsObjectEqual( Input.Result, Input.ExpectedOutput );
 	} else {
+		//Typically the comparison clause is of equivalence.
 		return Input.Result === Input.ExpectedOutput;
 	}
   };
