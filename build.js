@@ -3,7 +3,8 @@
 */ 
 ({
     paths: {
-	"underscore": "lib/underscore.min"
+	"underscore": "lib/underscore.min",
+	"bIsObjectEqual": "lib/bIsObjectEqual"
     },
     exclude: [
 	"underscore"
