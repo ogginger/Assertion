@@ -4,10 +4,11 @@
 ({
     paths: {
 	"underscore": "lib/underscore.min",
-	"bIsObjectEqual": "lib/bIsObjectEqual"
+	"bIsObjectEqual": "lib/is_object_equal.min"
     },
     exclude: [
-	"underscore"
+	"underscore",
+	"bIsObjectEqual"
     ],
     name: "Assertion",
     out: "assertion.min.js"
