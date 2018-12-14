@@ -18,7 +18,16 @@ define([
 		Input.Comparator.Object === true
 	) {
 		//Objects need a special function to compare for equivalence.
-		return bIsObjectEqual( Input.Result, Input.ExpectedOutput );
+		return bIsObjectEqual({
+			"Comparator": Input.Result,
+			"Comparand": Input.ExpectedResult
+		});
+	} else if ( Input.ExceptionTest ) {
+		//Exceptions need to be compared as objects.
+		return bIsObjectEqual({
+			"Comparator": Input.Result,
+			"Comparand": Input.ExpectedOutput 
+		});
 	} else {
 		//Typically the comparison clause is of equivalence.
 		return Input.Result === Input.ExpectedOutput;
