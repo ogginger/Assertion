@@ -20,7 +20,7 @@ define([
 		//Objects need a special function to compare for equivalence.
 		return bIsObjectEqual({
 			"Comparator": Input.Result,
-			"Comparand": Input.ExpectedResult
+			"Comparand": Input.ExpectedOutput
 		});
 	} else if ( Input.ExceptionTest ) {
 		//Exceptions need to be compared as objects.
