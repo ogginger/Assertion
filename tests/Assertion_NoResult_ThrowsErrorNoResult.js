@@ -7,13 +7,12 @@ define([
 ) {
 	return {
 		"Name":"Asseretion_NoResult_ThrowsErrorNoResult",
-		"Input": undefined,
-		"Function": Assertion,
-		"ExpectedOutput": { "Message": "Error: No result given!" },
-		"ExceptionTest": true,
-		"Comparator": {
-			"Object": true
+		"Input": {
+			"ExpectedOutput": undefined
 		},
-		"Debug": true
+		"Function": Assertion,
+		"ExceptionTest": true,
+		"ExpectedOutput": { "Message": "Error: No Result was given!" },
+		"Debug": false
 	};
 });

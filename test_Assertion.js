@@ -35,7 +35,7 @@ define([
 	xTestSuite.add ( Assertion_UnequivalentObjects_ReturnsFalse );
 	xTestSuite.add( Assertion_ExceptionTestTrue_ReturnsTrue );
 	xTestSuite.add( Assertion_NoResult_ThrowsErrorNoResult );
-//	xTestSuite.add( Assertion_NoExpectedOutput_ThrowsErrorNoExpectedOutput );
+	xTestSuite.add( Assertion_NoExpectedOutput_ThrowsErrorNoExpectedOutput );
       xTestSuite.test();
     }
   });

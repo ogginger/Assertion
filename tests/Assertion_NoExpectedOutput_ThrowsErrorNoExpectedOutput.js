@@ -7,8 +7,12 @@ define([
 ) {
 	return {
 		"Name":"Asseretion_NoExpectedOutput_ThrowsErrorNoExpectedOutput",
-		"Input": "",
+		"Input": {
+			"Result": undefined
+		},
 		"Function": Assertion,
-		"ExpectedOutput": ""
+		"ExpectedOutput": { "Message": "Error: No ExpectedOutput was given!" },
+		"ExceptionTest": true,
+		"Debug": false
 	};
 });

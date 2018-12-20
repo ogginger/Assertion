@@ -8,10 +8,11 @@ define([
 	return {
 		"Name":"Assertion_PassingAssertion_ReturnsTrue",
 		"Input": {
-			"Comparator": true,
-			"Comparand": true
+			"Result": true,
+			"ExpectedOutput": true
 		},
 		"Function": Assertion,
-		"ExpectedOutput": true
+		"ExpectedOutput": true,
+		"Debug": false
 	};
 });

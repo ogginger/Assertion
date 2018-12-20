@@ -5,7 +5,7 @@ define([ "underscore" ], function( _ ) {
 	function( Input ) {
 		if ( _.has( Input, "Result" ) === false ) {
 			throw { "Message": "Error: No Result was given!" };
-		} else if ( _.has( Inupt, "ExpectedOutput" ) === false ) {
+		} else if ( _.has( Input, "ExpectedOutput" ) === false ) {
 			throw { "Message": "Error: No ExpectedOutput was given!" };
 		} else {
 			return true;

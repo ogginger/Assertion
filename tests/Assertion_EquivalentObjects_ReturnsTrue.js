@@ -8,8 +8,8 @@ define([
 	return {
 		"Name":"Assertion_EquivalentObjects_ReturnsTrue",
 		"Input": {
-			"Comparator": { "Property": "Value" },
-			"Comparand": { "PropertyValue": "Value" }
+			"Result": { "Property": "Value" },
+			"ExpectedOutput": { "Property": "Value" }
 		},
 		"Function": Assertion,
 		"ExpectedOutput": true
